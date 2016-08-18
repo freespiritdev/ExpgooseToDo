@@ -10,9 +10,6 @@ require('mongoose').connect(MONGO_URL, err => {
   console.log(err || `Mongodb connected to ${MONGO_URL}`);
 });
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
-
 var app = express();
 
 // view engine setup
