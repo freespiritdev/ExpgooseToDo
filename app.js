@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-const MONGO_URL = 'mongodb://localhost/tododb'
+const MONGO_URL = 'mongodb://localhost/tododb';
 require('mongoose').connect(MONGO_URL, err => {
   console.log(err || `Mongodb connected to ${MONGO_URL}`);
 });
